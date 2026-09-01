@@ -1,0 +1,9 @@
+# Prettier est un outil qui remet le code en forme automatiquement. Il est
+# installé avec les extensions conseillées du projet, et il se déclenche à
+# chaque enregistrement.
+#
+# Ce fichier lui demande de ne pas toucher au HTML : l'indentation de vos
+# pages reste la vôtre, et plusieurs expériences du cours reposent sur du code
+# écrit exprès de travers.
+
+*.html
