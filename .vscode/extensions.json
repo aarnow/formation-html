@@ -1,0 +1,24 @@
+{
+  // Extensions recommandées pour ce projet.
+  // Visual Studio Code proposera de les installer à l'ouverture du dossier.
+  "recommendations": [
+    // Indispensable : sert le projet sur un vrai serveur local et recharge
+    // la page à chaque enregistrement.
+    // Extension communautaire — vérifiez l'auteur avant d'installer :
+    // il doit s'agir de « Ritwick Dey ».
+    "ritwickdey.LiveServer",
+
+    // Signale les erreurs de HTML pendant la frappe : balise non fermée,
+    // id en double, attribut alt manquant sur une image.
+    "HTMLHint.vscode-htmlhint",
+
+    // Signale les problèmes d'accessibilité directement dans l'éditeur.
+    // Utile à partir du module 13.
+    "deque-systems.vscode-axe-linter",
+
+    // Remet le code en forme automatiquement à l'enregistrement.
+    "esbenp.prettier-vscode"
+  ],
+
+  "unwantedRecommendations": []
+}
