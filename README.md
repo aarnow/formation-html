@@ -22,7 +22,7 @@ Les dossiers `assets/img/` et `assets/favicon/` contiennent chacun un
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - Un compte [GitHub](https://github.com/)
-- [Git](https://git-scm.com/downloads) — conseillé, mais on peut s'en passer :
+- [Git](https://git-scm.com/downloads) : conseillé, mais on peut s'en passer :
   voir « Récupérer le projet » plus bas
 
 Les extensions VS Code ne sont pas à chercher : **le projet les propose
@@ -33,10 +33,7 @@ gratuites.
 
 ### 1. Récupérer le projet
 
-Deux chemins. **Le premier est conseillé, le second est acceptable** — le cours
-fonctionne dans les deux cas.
-
-#### Avec Git — conseillé
+#### Avec Git
 
 Depuis la page du dépôt sur GitHub, bouton **Fork** en haut à droite. Vous
 obtenez votre propre copie, sur votre compte. Puis, dans un terminal :
@@ -56,7 +53,7 @@ git push
 C'est trois commandes, toujours les mêmes. Et au dernier bloc, publier ne
 demandera rien de plus : votre dépôt est déjà en place.
 
-#### Sans Git — si vous n'êtes pas encore à l'aise
+#### Sans Git
 
 Bouton vert **Code** → **Download ZIP**, puis décompressez le dossier où vous
 voulez travailler.
@@ -70,7 +67,7 @@ Au dernier bloc, vous publierez sans commande, par l'interface de GitHub :
 1. Sur GitHub, bouton **+** en haut à droite → **New repository**. Nommez-le,
    cochez **Public**, créez-le.
 2. Sur la page du dépôt vide : **uploading an existing file**.
-3. Glissez-y le contenu de votre dossier — vos pages, `css/`, `assets/`.
+3. Glissez-y le contenu de votre dossier, vos pages, `css/`, `assets/`.
    Les dossiers sont conservés. Validez avec **Commit changes**.
 4. **Settings → Pages**, source **Deploy from a branch**, branche `main`,
    dossier `/ (root)`. Enregistrez : l'adresse s'affiche après une minute.
