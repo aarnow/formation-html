@@ -7,7 +7,7 @@
   "liveServer.settings.root": "/",
 
   // Le port de l'adresse locale : http://127.0.0.1:5500
-  "liveServer.settings.port": 5500,
+  "liveServer.settings.port": 5501,
 
   // ---------------------------------------------------------------
   // Confort d'écriture du HTML
