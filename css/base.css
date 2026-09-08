@@ -187,8 +187,7 @@ table {
 }
 
 caption {
-  caption-side: bottom;
-  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   font-size: 0.9rem;
   color: #5b6674;
   text-align: left;
