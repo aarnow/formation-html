@@ -28,7 +28,18 @@
     </header>
 
     <main>
-      <p>La page merci</p>
+      <p>Merci, votre message est bien parti.</p>
+      <ul id="recap"></ul>
     </main>
+
+    <script>
+      const recap = document.getElementById('recap');
+
+      for (const [cle, valeur] of new URLSearchParams(window.location.search)) {
+        const item = document.createElement('li');
+        item.textContent = cle + ' : ' + valeur;
+        recap.append(item);
+      }
+    </script>
   </body>
 </html>
