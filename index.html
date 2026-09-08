@@ -140,6 +140,70 @@
           </tbody>
         </table>
       </section>
+
+      <section>
+        <h2>M'écrire</h2>
+        <p>N'hésitez pas à me contacter, je n'y répondrai pas.</p>
+        <small>* champs obligatoires</small>
+
+        <form action="merci.html" method="get">
+
+          <fieldset>
+            <legend>Coordonnées</legend>
+            <div>
+              <label for="nom">* Votre nom</label>
+              <input type="text" name="nom" id="nom" autocomplete="name" required>
+            </div>
+
+            <div>
+              <label for="email">* Votre email</label>
+              <input type="email" name="email" id="email" autocomplete="email" placeholder="johndoe@example.com" required>
+            </div>
+
+            <div>
+              <label for="tel">Votre numéro de téléphone</label>
+              <input type="tel" name="tel" id="tel" placeholder="0612345678" autocomplete="tel">
+            </div>
+
+            <fieldset>
+              <legend>Êtes-vous un professionnel ou particulier ?</legend>
+              <input type="radio" name="categorie" id="categorie-pro" value="professionnel">
+              <label for="categorie-pro">Professionnel</label>
+
+              <input type="radio" name="categorie" id="categorie-particulier" value="particulier">
+              <label for="categorie-particulier">Particulier</label>
+            </fieldset>
+          </fieldset>
+
+          <fieldset>
+            <legend>Message</legend>
+
+            <div>
+              <label for="sujet">Sujet</label>
+              <select name="sujet" id="sujet" required>
+                <option value="">Sélectionner le sujet de votre message</option>
+                <option value="stage">Demande de stage</option>
+                <option value="boulot">Offre d'emploi</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message">* Votre message</label>
+              <textarea name="message" id="message" rows="5" minlength="10" placeholder="10 caractères minimum" required></textarea>
+            </div>
+
+             <div>
+              <input type="checkbox" id="copie" name="copie" value="oui">
+              <label for="copie">M'envoyer une copie de ce message</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Envoyer le message</button>
+          </div>
+
+        </form>
+      </section>
     </main>
   </body>
 </html>
