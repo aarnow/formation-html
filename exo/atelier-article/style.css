@@ -1,0 +1,91 @@
+/* Feuille de style de l'atelier. Vous n'avez pas à l'écrire ni à la modifier,
+   elle est là pour que votre article se lise agréablement.
+
+   Elle ne vise que des balises, jamais une classe : quelle que soit la
+   structure que vous choisirez, elle s'appliquera. Si un morceau de votre
+   page reste moche, c'est en général que la balise n'est pas la bonne. */
+
+:root {
+  --fond: #fbfaf7;
+  --texte: #23201c;
+  --doux: #6b6459;
+  --trait: #e0dbd1;
+  --accent: #8a5a2b;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #1a1816;
+    --texte: #ece7e0;
+    --doux: #a49b8e;
+    --trait: #35302a;
+    --accent: #d8a56a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 42rem;
+  padding: 3rem 1.25rem 6rem;
+  background: var(--fond);
+  color: var(--texte);
+  font: 1.05rem/1.7 Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 0.4rem; }
+h2 { font-size: 1.4rem; margin: 2.8rem 0 0.6rem; }
+h3 { font-size: 1.1rem; margin: 1.8rem 0 0.4rem; }
+
+p { margin: 0 0 1.1rem; }
+
+a { color: var(--accent); }
+
+/* La signature et la date, juste sous le titre. */
+header p { color: var(--doux); font-size: 0.95rem; }
+time { white-space: nowrap; }
+abbr { text-decoration: underline dotted; cursor: help; }
+
+ul, ol { margin: 0 0 1.2rem; padding-left: 1.4rem; }
+li { margin: 0.3rem 0; }
+
+blockquote {
+  margin: 1.8rem 0;
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  border-left: 3px solid var(--accent);
+  font-style: italic;
+}
+blockquote p:last-child { margin-bottom: 0; }
+cite { display: block; font-style: normal; font-size: 0.92rem; color: var(--doux); margin-top: 0.6rem; }
+
+figure { margin: 2rem 0; }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { font-size: 0.9rem; color: var(--doux); padding-top: 0.5rem; }
+
+/* Un contenu qui se lit à côté de l'article, pas dedans. */
+aside {
+  margin: 2rem 0;
+  padding: 1.1rem 1.3rem;
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  border-radius: 6px;
+  font-size: 0.97rem;
+}
+aside > :last-child { margin-bottom: 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 1.5rem 0; font-size: 0.97rem; }
+caption { text-align: left; color: var(--doux); padding-bottom: 0.5rem; }
+th, td { border-bottom: 1px solid var(--trait); padding: 0.5rem 0.6rem; text-align: left; }
+th { font-weight: 700; }
+
+ins { text-decoration: none; background: color-mix(in srgb, var(--accent) 16%, transparent); }
+del { color: var(--doux); }
+
+hr { border: 0; border-top: 1px solid var(--trait); margin: 2.5rem 0; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--trait);
+  color: var(--doux);
+  font-size: 0.95rem;
+}
